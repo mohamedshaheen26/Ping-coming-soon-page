@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+}
+
+main {
+  width: 700px;
+  margin: 0 auto;
+  padding-top: 60px;
+  text-align: center;
+}
+
+main .logo {
+  margin-bottom: 30px;
+}
+
+main h1 {
+  margin-bottom: 10px;
+}
+
+main h1 span {
+  font-weight: 300;
+  color: hsl(0, 0%, 59%);
+}
+
+main form {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+main form div {
+  width: 70%;
+}
+
+main form input {
+  padding: 17px;
+  border-radius: 50px;
+  border: 1px solid #ddd;
+}
+
+main form input:first-child {
+  padding-left: 35px;
+  width: 100%;
+  margin-right: 10px;
+}
+
+main form input:first-child:focus {
+  outline: none;
+}
+
+main form input:first-child::placeholder {
+  color: hsl(0, 0%, 86%);
+  transition: 0.4s;
+}
+
+main form input:first-child:focus::placeholder {
+  opacity: 0;
+}
+
+.error {
+  border: 2px solid hsl(354, 100%, 66%);
+}
+
+.errorMsg {
+  display: block;
+  font-size: 10px;
+  font-weight: 600;
+  text-align: left;
+  margin-left: 38px;
+  margin-top: 5px;
+  color: hsl(354, 100%, 66%);
+}
+
+main form input:last-child {
+  width: 25%;
+  background-color: hsl(223, 87%, 63%);
+  color: white;
+  letter-spacing: 0.5px;
+  border: none;
+  box-shadow: 0px 2px 8px hsl(223, 81%, 70%);
+  cursor: pointer;
+}
+
+main form input:last-child:hover {
+  background-color: hsl(223, 81%, 70%);
+}
+
+main .illustration {
+  margin: 70px 0;
+}
+
+main .illustration img {
+  width: 100%;
+}
+
+main .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
+  margin-bottom: 25px;
+}
+
+main .icons span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+main .icons span:hover {
+  background-color: hsl(223, 87%, 63%);
+}
+
+main .icons span:hover i {
+  color: #fff;
+}
+
+main .icons span i {
+  font-size: 13px;
+  color: hsl(223, 87%, 63%);
+}
+
+main .copyright {
+  color: hsl(0, 0%, 59%);
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  main {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+  main form {
+    flex-direction: column;
+    padding: 0 20px;
+    gap: 15px;
+  }
+  main form div,
+  main form input {
+    width: 100% !important;
+  }
+  main .illustration img {
+    width: 100%;
+  }
+  .errorMsg {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 14px;
+  }
+}
