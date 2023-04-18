@@ -73,14 +73,14 @@
             email.className += "error";
             const formControl = email.parentElement;
             const span = formControl.querySelector("span");
-            span.className += "errorMsg";
+            span.className = "errorMsg";
             span.innerText = "Please provide a valid email address";
           }
         } else {
           email.className += "error";
           const formControl = email.parentElement;
           const span = formControl.querySelector("span");
-          span.className += "errorMsg";
+          span.className = "errorMsg";
           span.innerText = "Email cannot be Empty";
         }
       });
